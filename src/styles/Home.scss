@@ -1,0 +1,57 @@
+.header-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    header {
+        background: #000;
+        background-image: url('../images/banner.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 100vh;
+        scroll-snap-align: center;
+        text-align: center;
+    
+        h1 {
+            font-family: 'Joules Hand';
+            color: #fff;
+            -webkit-transform: translateY(35vh);
+            font-size: 6rem;
+            font-weight: 3;
+        } 
+        
+        @media(min-width: 1400px) { h1 { font-size: 8rem; }}
+
+        nav {
+            -webkit-transform: translateY(35vh);
+            width: 100%;
+            text-align: center;
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                max-width: 600px;
+                margin: auto;
+                
+                li {
+                    a {
+                        font-size: 1.8rem;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    
+    .overlay {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.15);
+        opacity: 1;  
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+  

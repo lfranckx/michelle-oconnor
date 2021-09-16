@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Joules Serif";
+  color: #000;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: "Joules Hand";
+  src: url('../fonts/Joules et Jaques Hand.otf');
+}
+
+@font-face {
+  font-family: "Joules Hand Thick";
+  src: url('../fonts/Joules et Jaques Hand-thicker.otf');
+}
+
+@font-face {
+  font-family: "Joules Serif";
+  src: url('../fonts/Joules et Jaques Serif.otf');
+}
