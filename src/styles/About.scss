@@ -1,0 +1,32 @@
+#about {
+    
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    .wrap {
+        display: flex;
+        align-items: center;
+        
+        .img-wrap {
+            width: 50%;
+            img {
+                border-radius: 100px;
+                max-height: 95vh;
+                max-width: 95%;
+                // margin-left: auto;
+            }
+        }
+        
+        .text-wrap {
+            width: 50%;
+            margin: auto;
+            padding: 1rem 2rem;
+            p {
+                font-size: 1.3rem;
+                text-align: left;
+                margin: 1rem;
+            }
+        }
+    }
+}

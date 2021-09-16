@@ -5,6 +5,18 @@
   color: #000;
   text-decoration: none;
   list-style-type: none;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+section {
+  padding: 2rem 4rem;
+  text-align: center;
 }
 
 @font-face {
