@@ -14,7 +14,6 @@ const AwardsSlider = ({ slides }) => {
         setCurrent(current === 0  ? length - 1 : current - 1)
     }
 
-    // if no data or is not an array return null
     if (!Array.isArray(slides) || slides.length <= 0) {
         return (
             <>
@@ -26,19 +25,58 @@ const AwardsSlider = ({ slides }) => {
         )
     }
 
+    console.log('current', current);
     return (
         <>
             <div className='awards_slider'>
                 <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
                 <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
                 {AwardsData.map((img, index) => {
+                    if (current === 0) {
+                        return (
+                            <div className='slides-wrap' key={index} >
+                                <div className={'slide-que left-que'}>
+                                    { index === length - 1  && (<img src={img.src} alt={img.alt} width='500px'/>)}
+                                </div>
+                                <div className={index === current ? 'slide active' : 'slide'}>
+                                    {index === current && (<img src={img.src} alt={img.alt} width='500px'/>)}
+                                </div>
+                                <div className={'slide-que right-que'}>
+                                    {index === current + 1  && (<img src={img.src} alt={img.alt} width='500px'/>)}
+                                </div>
+                            </div>
+                        )
+                    }
+
+                    if (current === length - 1) {
+                        return ( 
+                            <div className='slides-wrap' key={index} >
+                                <div className={'slide-que left-que'}>
+                                    { index === current - 1  && (<img src={img.src} alt={img.alt} width='500px'/>)}
+                                </div>
+                                <div className={index === current ? 'slide active' : 'slide'}>
+                                    {index === current && (<img src={img.src} alt={img.alt} width='500px'/>)}
+                                </div>
+                                <div className={'slide-que right-que'}>
+                                    {index === 0  && (<img src={img.src} alt={img.alt} width='500px'/>)}
+                                </div>
+                            </div>
+                        
+                        );
+                    }
+
                     return ( 
-                        <div className='slides-wrap'>
-                            <div className={index === current ? 'slide active' : 'slide'} key={index} >
-                                {index === current && (<img src={img.src} alt={`awards image ${index}`} width='500px'/>)}
+                        <div className='slides-wrap' key={index} >
+                            <div className={'slide-que left-que'}>
+                                { index === current - 1  && (<img src={img.src} alt={img.alt} width='500px'/>)}
+                            </div>
+                            <div className={index === current ? 'slide active' : 'slide'}>
+                                {index === current && (<img src={img.src} alt={img.alt} width='500px'/>)}
+                            </div>
+                            <div className={'slide-que right-que'}>
+                                {index === current + 1  && (<img src={img.src} alt={img.alt} width='500px'/>)}
                             </div>
                         </div>
-                    
                     );
                 })}
             </div>

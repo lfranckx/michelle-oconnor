@@ -8,7 +8,9 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <Home />
+      <Switch >
+        <Route exact path="/" component={Home} />
+      </Switch>
       <Footer />
     </>
   )
