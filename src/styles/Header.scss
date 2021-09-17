@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
+    
     header {
         background: #000;
         background-image: url('../images/banner.jpg');
@@ -17,14 +18,16 @@
         h1 {
             font-family: 'Joules Hand';
             color: #fff;
+            transform: translateY(35vh);
             -webkit-transform: translateY(35vh);
-            font-size: 6rem;
+            font-size: 7rem;
             font-weight: 3;
         } 
         
-        @media(min-width: 1400px) { h1 { font-size: 8rem; }}
+        @media(min-width: 1000px) { h1 { font-size: 9rem; }}
 
         nav {
+            transform: translateY(35vh);
             -webkit-transform: translateY(35vh);
             width: 100%;
             text-align: center;
@@ -39,6 +42,13 @@
                     button, a {
                         font-size: 1.8rem;
                         color: #fff;
+                        z-index: 1;
+
+                        &:hover {
+                            text-decoration: underline;
+                            cursor: pointer;
+                            transition: all ease 0.3s;
+                        }
                     }
                 }
             }
@@ -47,10 +57,11 @@
     
     .overlay {
         position: absolute;
-        background: rgba(0, 0, 0, 0.15);
+        background: rgba(0, 0, 0, 0.1);
         opacity: 1;  
         width: 100%;
         height: 100vh;
+        pointer-events: none;
     }
 }
 

@@ -12,6 +12,7 @@
     "react-scripts": "4.0.3",
     "react-spring": "^9.2.4",
     "sass": "^1.41.0",
+    "scroll": "^3.0.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
