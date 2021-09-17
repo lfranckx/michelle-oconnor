@@ -1,3 +1,38 @@
 #awards {
     background: #FBE4D6;
+
+    .awards_slider {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 506px;
+
+        .left-arrow, .right-arrow {
+            position: absolute;
+            top: 50%;
+            font-size: 3rem;
+            color: #000;
+            cursor: pointer;
+            user-select: none;
+            z-index: 1;
+        }
+
+        .left-arrow { left: 32px; color: #fff; } 
+        .right-arrow { right: 32px; }
+
+        .slide {
+            opacity: 0;
+            transition-duration: 1s ease;
+        }
+
+        .slide.active {
+            opacity: 1;
+            transition-duration: 1s;
+            transform: scaaale(1.08);
+        }
+    }
+    
+
+    
 }
