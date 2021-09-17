@@ -25,12 +25,11 @@ const AwardsSlider = ({ slides }) => {
         )
     }
 
-    console.log('current', current);
     return (
         <>
             <div className='awards_slider'>
-                <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
-                <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+                <FaArrowAltCircleLeft className='left-arrow arrow' onClick={prevSlide} />
+                <FaArrowAltCircleRight className='right-arrow arrow' onClick={nextSlide} />
                 {AwardsData.map((img, index) => {
                     if (current === 0) {
                         return (

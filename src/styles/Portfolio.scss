@@ -1,7 +1,33 @@
 #portfolio {
     background: #000;
+    z-index: -2;
     
     h2 {
         color: #fff;
+    }
+
+    .portfolio_slider {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 700px;
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            font-size: 3rem;
+            user-select: none;
+            z-index: 4;
+
+            path {
+                color: #fff;
+                &:hover {
+                    cursor: pointer;
+                    color: #E94B5F;
+                    transition: all ease 0.2s;
+                }
+            }
+        }
     }
 }
