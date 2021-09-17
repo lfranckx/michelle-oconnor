@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
+import ContactLink  from './ContactLink';
+
 import '../styles/Header.scss';
 
 export default function Header(props) {
@@ -9,11 +11,11 @@ export default function Header(props) {
                 <h1>Michelle O'Connor</h1>
                 <nav>
                     <ul>
-                        <li><button>About</button></li>
-                        <li><button>Press</button></li>
-                        <li><button>Awards</button></li>
-                        <li><button>Portfolio</button></li>
-                        <li><Link to='/'>Contact</Link></li>
+                        <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}>About</Link></li>
+                        <li><Link activeClass="active" to="press" spy={true} smooth={true} offset={0} duration={500}>Press</Link></li>
+                        <li><Link activeClass="active" to="awards" spy={true} smooth={true} offset={0} duration={500}>Awards</Link></li>
+                        <li><Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={0} duration={500}>Portfolio</Link></li>
+                        <li><ContactLink /></li>
                     </ul>
                 </nav>
             </header>
