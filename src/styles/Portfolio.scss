@@ -4,12 +4,15 @@
     
     h2 {
         color: #fff;
+        margin-bottom: 2rem;
     }
 
     #portfolio_slider {
         position: relative;
+        top: 2rem;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: flex-end;
         align-items: center;
         min-height: 100vh;
 
@@ -34,28 +37,45 @@
         .right-arrow { right: 3rem; }
 
         @media(min-width: 1400px) {
-            .left-arrow { left: 5rem; } 
-            .right-arrow { right: 5rem; }
+            .left-arrow { left: 18rem; } 
+            .right-arrow { right: 18rem; }
         } 
         @media(max-width: 750px) {
             .left-arrow { left: .5rem; } 
             .right-arrow { right: .5rem; }
         }
 
-        .slide {
-            opacity: 0;
-            transition-duration: 1s ease;
+        .slide-wrap {
+            .slide {
+                opacity: 0;
+                transition: 1s ease all;
+            }
+    
+            .slide.active {
+                opacity: 1;
+                transition-duration: 1s;
+                transform: scale(1.08);
+                z-index: 2;
+            }
         }
 
-        .slide.active {
-            opacity: 1;
-            transition-duration: 1s;
-            transform: scale(1.08);
-            z-index: 2;
-        }
+        .bottom-que {
+            margin-top: 4rem;
+            display: flex;
+            align-items: baseline;
+            padding-bottom: 2rem;
 
-        .slide-que {
-            position: relative;
+            .slide {
+                &::after {
+                    content: '';
+
+                }
+            }
+
+            .slide.active {
+                transform: scale(1.08);
+                transition: all ease 1s;
+            }
         }
 
         .left-que { left: -15rem; }
