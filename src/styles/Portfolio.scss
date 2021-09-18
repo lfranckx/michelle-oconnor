@@ -60,7 +60,7 @@
         }
 
         .bottom-que {
-            margin-top: 4rem;
+            margin-top: 8rem;
             display: flex;
             align-items: baseline;
             padding-bottom: 2rem;
@@ -73,7 +73,7 @@
             }
 
             .slide.active {
-                transform: scale(1.08);
+                transform: scale(1.1);
                 transition: all ease 1s;
             }
         }

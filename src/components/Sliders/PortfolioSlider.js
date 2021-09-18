@@ -9,25 +9,12 @@ const PortfolioSlider = ({ data }) => {
     const [prevCollectionIndex, setPrevCollectionIndex] = useState(7);
     const [prevCollection, setPrevCollection] = useState(data[prevCollectionIndex]);
 
-    console.log('current slide', currentSlide);
-    console.log('current collection index', collectionIndex);
-    console.log(`collection:`, currentCollection);
-    console.log(`prev collection index`, prevCollectionIndex);
-    console.log(`prev collection`, prevCollection);
-
     const nextSlide = () => {
-        // if current slide is equal to current collection length go to next collection
         if (currentSlide === currentCollection.length - 1) {
-            // if current collection index is equal to current collection length revert collection back to 0
             setCollectionIndex(collectionIndex === data.length - 1 ? 0 : collectionIndex + 1);
             setCurrentCollection(currentCollection === data[7] ? data[0] : data[collectionIndex + 1]);
         } 
         setCurrentSlide(currentSlide === currentCollection.length - 1 ? 0 : currentSlide + 1);
-    }
-
-    const settiingPrevCollection = () => {
-        console.log('running setPrevcollection');
-
     }
 
     const prevSlide = () => {
