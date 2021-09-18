@@ -30,38 +30,33 @@ const PortfolioSlider = ({ data }) => {
         setCurrentSlide(currentSlide === 0  ? currentCollection.length - 1 : currentSlide - 1);
     }
 
-    // if (!Array.isArray(data) || data.length <= 0) {
-    //     return (
-    //         <>
-    //             <div className='portfolio_slider'>
-    //                 <FaArrowAltCircleLeft className='left-arrow arrow' onClick={prevSlide} />
-    //                 <FaArrowAltCircleRight className='right-arrow arrow' onClick={nextSlide} /> 
-    //             </div>
-    //         </>
-    //     )
-    // }
+    if (!Array.isArray(data) || data.length <= 0) {
+        return (
+            <>
+                <div className='portfolio_slider'>
+                    <FaArrowAltCircleLeft className='left-arrow arrow' onClick={prevSlide} />
+                    <FaArrowAltCircleRight className='right-arrow arrow' onClick={nextSlide} /> 
+                </div>
+            </>
+        )
+    }
 
     return (
-        <div className='portfolio_slider'>
+        <div id='portfolio_slider'>
             <FaArrowAltCircleLeft className='left-arrow arrow' onClick={prevSlide} />
             <FaArrowAltCircleRight className='right-arrow arrow' onClick={nextSlide} />
-            {/* {PortfolioData.map((collection, index) => {
-                <div key={index}>
-                    {collection.map((img, index) => {
-                        <div>
-                            {index === currentSlide && (<img src={img.src} alt={img.alt} width='500px'/>)}
-                        </div>  
-                    })}
-                </div>
-            })} */}
             {currentCollection.map((img, index) => {
-                console.log(img);
-                console.log(img.src);
-                console.log(index, currentSlide);
-                {index === currentSlide && (<img src={img.src} alt={img.alt} key={index} width='500px'/>)}
+                return (<>
+                    <div className={index === currentSlide ? 'slide active' : 'slide'}>
+                        {index === currentSlide && (<img src={img.src} alt={img.alt} key={index} width='400px'/>)}
+                    </div>
+                    <div>
+
+                    </div>
+                </>)
             })}
         </div>
     )
 }
 
-export default PortfolioSlider
+export default PortfolioSlider;

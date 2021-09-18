@@ -7,7 +7,7 @@ export default function Portfolio() {
     return (
         <>
             <section id='portfolio'>
-                <h2>Portfolio</h2>
+                <h2 id='portfolio-title'>Portfolio</h2>
                 <PortfolioSlider data={PortfolioData} />
             </section>
         </>

@@ -6,12 +6,12 @@
         color: #fff;
     }
 
-    .portfolio_slider {
+    #portfolio_slider {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 700px;
+        min-height: 100vh;
 
         .arrow {
             position: absolute;
@@ -29,5 +29,36 @@
                 }
             }
         }
+
+        .left-arrow { left: 3rem; } 
+        .right-arrow { right: 3rem; }
+
+        @media(min-width: 1400px) {
+            .left-arrow { left: 5rem; } 
+            .right-arrow { right: 5rem; }
+        } 
+        @media(max-width: 750px) {
+            .left-arrow { left: .5rem; } 
+            .right-arrow { right: .5rem; }
+        }
+
+        .slide {
+            opacity: 0;
+            transition-duration: 1s ease;
+        }
+
+        .slide.active {
+            opacity: 1;
+            transition-duration: 1s;
+            transform: scale(1.08);
+            z-index: 2;
+        }
+
+        .slide-que {
+            position: relative;
+        }
+
+        .left-que { left: -15rem; }
+        .right-que { right: -15rem; }
     }
 }
