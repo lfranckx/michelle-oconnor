@@ -9,8 +9,12 @@
         padding: 4rem 4rem 2rem;
 
         .wrap {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
 
             .column {
                 display: block;
@@ -48,6 +52,22 @@
                             font-size: 1rem;
                             width: 280px;
                             color: #E94B5F;
+                        }
+
+                        input::-webkit-input-placeholder {
+                            color: #df8a95
+                        }
+
+                        input::-moz-placeholder {
+                            color: #df8a95
+                        }
+
+                        input:-ms-input-placeholder {
+                            color: #df8a95
+                        }
+
+                        input::-ms-input-placeholder {
+                            color: #df8a95
                         }
 
                         input::placeholder {

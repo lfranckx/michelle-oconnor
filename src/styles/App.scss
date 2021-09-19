@@ -3,6 +3,8 @@
   margin: 0;
   font-family: "Joules Serif";
   list-style-type: none;
+  -webkit-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
   transition: all ease-out .5s;
   -webkit-transition: all ease-out .2s;
 }
@@ -39,6 +41,7 @@ section {
 
   &:hover { 
     background: #000; 
+    -o-transition: all ease .15s; 
     transition: all ease .15s;
     -webkit-transition: all ease .15s; 
   }

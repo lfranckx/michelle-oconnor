@@ -10,17 +10,29 @@
     #portfolio_slider {
         position: relative;
         top: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         min-height: 100vh;
 
         .arrow {
             position: absolute;
             top: 50%;
             font-size: 3rem;
-            user-select: none;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                -ms-user-select: none;
+                    user-select: none;
             z-index: 4;
             cursor: pointer;
 
@@ -30,6 +42,7 @@
 
             &:hover path {
                 color: #E94B5F;
+                -o-transition: all ease 0.2s;
                 transition: all ease 0.2s;
                 -webkit-transition: all ease 0.2s;
             }
@@ -50,15 +63,19 @@
         .slide-wrap {
             .slide {
                 opacity: 0;
+                -o-transition: 1s ease all;
                 transition: 1s ease all;
                 -webkit-transition: 1s ease all;
             }
     
             .slide.active {
                 opacity: 1;
-                transform: scale(1.08);
+                -ms-transform: scale(1.08);
+                    transform: scale(1.08);
                 -webkit-transform: scale(1.08s);
-                transition-duration: 1s;
+                -webkit-transition-duration: 1s;
+                     -o-transition-duration: 1s;
+                        transition-duration: 1s;
                 -webkit-transform: 1s;
                 z-index: 2;
             }
@@ -66,13 +83,19 @@
 
         .bottom-que {
             margin-top: 8rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: baseline;
+            -webkit-box-align: baseline;
+                -ms-flex-align: baseline;
+                    align-items: baseline;
             padding-bottom: 2rem;
 
             .slide.active {
-                transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                    transform: scale(1.1);
                 -webkit-transform: scale(1.1);
+                -o-transition: all ease 1s;
                 transition: all ease 1s;
                 -webkit-transition: all ease 1s;
             }

@@ -9,16 +9,25 @@
 
     .awards_slider {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         min-height: 506px;
 
         .arrow {
             position: absolute;
             top: 50%;
             font-size: 3rem;
-            user-select: none;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                -ms-user-select: none;
+                    user-select: none;
             z-index: 4;
             cursor: pointer;
 
@@ -28,6 +37,7 @@
 
             &:hover path {
                 color: #E94B5F;
+                -o-transition: all ease 0.2s;
                 transition: all ease 0.2s;
                 -webkit-transition: all ease 0.2s;
             }
@@ -48,17 +58,23 @@
         }
 
         .slides-wrap {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             position: absolute;
 
             .slide {
-                transition-duration: 1s ease;
+                -webkit-transition-duration: 1s ease;
+                     -o-transition-duration: 1s ease;
+                        transition-duration: 1s ease;
             }
     
             .slide.active {
-                transition-duration: 1s;
+                -o-transition-duration: 1s;
+                   transition-duration: 1s;
                 -webkit-transition-duration: 1s;
-                transform: scale(1.08);
+                -ms-transform: scale(1.08);
+                    transform: scale(1.08);
                 -webkit-transform: scale(1.08);
                 z-index: 2;
             }
