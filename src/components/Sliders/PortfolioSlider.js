@@ -13,6 +13,8 @@ const PortfolioSlider = ({ data }) => {
         if (currentSlide === currentCollection.length - 1) {
             setCollectionIndex(collectionIndex === data.length - 1 ? 0 : collectionIndex + 1);
             setCurrentCollection(currentCollection === data[7] ? data[0] : data[collectionIndex + 1]);
+            setPrevCollectionIndex(prevCollectionIndex === 7 ? 0 : prevCollectionIndex + 1);
+            setPrevCollection(prevCollection === data[7] ? data[0] : data[prevCollectionIndex + 1])
         } 
         setCurrentSlide(currentSlide === currentCollection.length - 1 ? 0 : currentSlide + 1);
     }

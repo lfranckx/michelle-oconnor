@@ -25,6 +25,19 @@ section {
 
 .hidden { display: none; }
 
+.opacity-0 { opacity: 0; }
+
+.btn {
+  background: #E94B5F;
+  color: #fff;
+  border-radius: .2rem;
+  padding: .5rem .7rem;
+  font-size: 1.2rem; 
+  cursor: pointer;
+  &:hover { background: #000; 
+    transition: all ease .15s; }
+}
+
 @font-face {
   font-family: "Joules Hand";
   src: url('../fonts/Joules et Jaques Hand.otf');

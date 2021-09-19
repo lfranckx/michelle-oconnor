@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
+
 import Header from '../components/Header.js';
 import About from '../components/About';
 import Press from '../components/Press';
@@ -12,6 +14,11 @@ export default function Home(props) {
 
     return (
     <>
+        <Helmet >
+            <title>Contact Michelle O'Connor</title>
+            <meta name='description' content='Get in touch with myself and my team'/>
+            <meta name='keywords' content='Curly Hair, Coily Hair, Black Hair, Brown Hair, Red Hair, Blonde Hair, Wavy Hair, Straight Hair, Smooth Hair, Ethnic Hair, Multicultural Hair, Crown Act, Curls, Hairstylist, Hairdresser, Stylist, Editorial stylist, Award Winner, NAHA, Mentor' />
+        </Helmet>
         <Header />
         <main>
             <About />

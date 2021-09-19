@@ -1,4 +1,5 @@
  import React from 'react';
+ import { Link } from 'react-router-dom';
  import '../styles/Footer.scss';
 
 export default function Footer() {
@@ -7,7 +8,7 @@ export default function Footer() {
             <footer>
                 <div className='wrap'>
                     <div className='column left'>
-                        <h3>Michelle O'Connor</h3>
+                        <h3><Link to='/'>Michelle O'Connor</Link></h3>
                         <a href='https://www.instagram.com/michelleoconnorbeauty/' target='_blank' rel='noreferrer'>@michelleoconnorbeauty</a>
                     </div>
                     <div className='column right'>
@@ -22,7 +23,7 @@ export default function Footer() {
                                 <label htmlFor='email' className='hidden'>Email</label>
                                 <input type='text' id='name' placeholder='Your email' />
                             </div>
-                            <button>Submit</button>
+                            <button className='btn'>Submit</button>
                         </form>
                     </div>
                 </div>

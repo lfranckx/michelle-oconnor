@@ -11,7 +11,7 @@ export default function ThankYou() {
             <Helmet >
                 <title>Thank You</title>
                 <meta name='description' content='Thank you for contacting us'/>
-                <meta name='keywords' content='Hair, Hair Color, Highlights, Hair Stylist' />
+                <meta name='keywords' content='Curly Hair, Coily Hair, Black Hair, Brown Hair, Red Hair, Blonde Hair, Wavy Hair, Straight Hair, Smooth Hair, Ethnic Hair, Multicultural Hair, Crown Act, Curls, Hairstylist, Hairdresser, Stylist, Editorial stylist, Award Winner, NAHA, Mentor' />
             </Helmet>
             <main>
                 <animated.div style={props} id="thankyou">
