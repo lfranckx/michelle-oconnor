@@ -39,17 +39,6 @@
                     width: 500px;
                 }
             }
-
-            .btn {
-                background: #E94B5F;
-                padding: .5rem 1.2rem;
-                color: #fff;
-                font-size: 1.2rem;
-                border-radius: 2px;
-                cursor: pointer;
-                &:hover { background: #000; 
-                    transition: all ease .15s; }
-            }
         }
     }
 }

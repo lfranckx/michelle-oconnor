@@ -20,16 +20,19 @@
             font-size: 3rem;
             user-select: none;
             z-index: 4;
+            cursor: pointer;
 
             path {
                 color: #fff;
-
-                &:hover {
-                    cursor: pointer;
-                    color: #E94B5F;
-                    transition: all ease 0.2s;
-                }
             }
+
+            &:hover path {
+                color: #E94B5F;
+                transition: all ease 0.2s;
+                -webkit-transition: all ease 0.2s;
+            }
+
+            
         }
 
         .left-arrow { left: 3rem; } 
@@ -49,14 +52,14 @@
             position: absolute;
 
             .slide {
-                // opacity: 0;
                 transition-duration: 1s ease;
             }
     
             .slide.active {
-                // opacity: 1;
                 transition-duration: 1s;
+                -webkit-transition-duration: 1s;
                 transform: scale(1.08);
+                -webkit-transform: scale(1.08);
                 z-index: 2;
             }
 

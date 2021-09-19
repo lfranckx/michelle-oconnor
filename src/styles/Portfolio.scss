@@ -22,14 +22,16 @@
             font-size: 3rem;
             user-select: none;
             z-index: 4;
+            cursor: pointer;
 
             path {
                 color: #fff;
-                &:hover {
-                    cursor: pointer;
-                    color: #E94B5F;
-                    transition: all ease 0.2s;
-                }
+            }
+
+            &:hover path {
+                color: #E94B5F;
+                transition: all ease 0.2s;
+                -webkit-transition: all ease 0.2s;
             }
         }
 
@@ -49,12 +51,15 @@
             .slide {
                 opacity: 0;
                 transition: 1s ease all;
+                -webkit-transition: 1s ease all;
             }
     
             .slide.active {
                 opacity: 1;
-                transition-duration: 1s;
                 transform: scale(1.08);
+                -webkit-transform: scale(1.08s);
+                transition-duration: 1s;
+                -webkit-transform: 1s;
                 z-index: 2;
             }
         }
@@ -67,7 +72,9 @@
 
             .slide.active {
                 transform: scale(1.1);
+                -webkit-transform: scale(1.1);
                 transition: all ease 1s;
+                -webkit-transition: all ease 1s;
             }
         }
 
