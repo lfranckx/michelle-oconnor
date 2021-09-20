@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Contact from './pages/Contact';
 import ThankYou from './pages/ThankYouPage';
 import NotFoundPage from './pages/NotFoundPage';
+import ComingSoon from './pages/ComingSoon';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/thankyou' component={ThankYou} />
+        <Route exact path='/comingsoon' component={ComingSoon} />
         <Route component={NotFoundPage} />
       </Switch>
       <Footer />

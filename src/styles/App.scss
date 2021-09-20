@@ -50,6 +50,8 @@ section {
 @media(max-width: 750px) {
   h2 { font-size: 3rem; }
   section { padding: 4rem 1rem; }
+
+  p, a , button, label, input, .btn { font-size: .8rem; }
 }
 
 @media(max-width: 500px) {

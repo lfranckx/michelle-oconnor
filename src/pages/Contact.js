@@ -53,13 +53,6 @@ function Contact() {
                             <div className="label">
                                 <label htmlFor="salon"></label>
                             </div>
-                            {/* <div>
-                                <input
-                                    type="text"
-                                    name="salon"
-                                    placeholder='Your Salon'
-                                />
-                            </div> */}
 
                             <div className="label">
                                 <label htmlFor="email"></label>

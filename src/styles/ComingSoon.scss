@@ -1,0 +1,40 @@
+#coming-soon {
+    min-height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #E94B5F;
+    h1 { font-size: 6rem; color: #fff;}
+    h2 { font-size: 1.2rem; color: #fff;}
+    h2 span a { 
+        color: #FBE4D6; 
+        &:hover { text-decoration: underline; }
+    }
+
+    .btn { 
+        background: #FBE4D6; 
+        color: #000;
+        &:hover { background: #000; color: #fff; }
+    }  
+}
+
+@media(max-width: 1400px) {
+    #coming-soon {
+        h1 { font-size: 5rem;}
+    }
+}
+
+@media(max-width: 750px) {
+    #coming-soon {
+        padding: 4rem .5rem;
+        h1 { font-size: 3rem;}
+        h2 { font-size: 1rem; color: #fff;}
+    }
+}

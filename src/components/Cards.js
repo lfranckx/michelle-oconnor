@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
-import { RiRestartFill, RiRestartLine } from 'react-icons/ri';
+import { RiRestartFill } from 'react-icons/ri';
 
 
 function Cards() {
