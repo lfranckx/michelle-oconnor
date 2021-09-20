@@ -8,7 +8,7 @@ export default function Footer() {
             <footer>
                 <div className='wrap'>
                     <div className='column left'>
-                        <h3><Link to='/'>Michelle O'Connor</Link></h3>
+                        <h3><Link to={'/'}>Michelle O'Connor</Link></h3>
                         <a href='https://www.instagram.com/michelleoconnorbeauty/' target='_blank' rel='noreferrer'>@michelleoconnorbeauty</a>
                     </div>
                     <div className='column right'>

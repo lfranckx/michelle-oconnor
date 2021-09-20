@@ -9,7 +9,7 @@ export default function Header(props) {
         <div className='header-wrap'>
             <header>
                 <h1>Michelle O'Connor</h1>
-                <nav>
+                <nav id='nav_desktop'>
                     <ul>
                         <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}>About</Link></li>
                         <li><Link activeClass="active" to="press" spy={true} smooth={true} offset={0} duration={500}>Press</Link></li>

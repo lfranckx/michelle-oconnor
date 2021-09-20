@@ -78,18 +78,24 @@
                         transition-duration: 1s;
                 -webkit-transform: 1s;
                 z-index: 2;
+
+                img {
+                    max-height: 550px;
+                    width: 100%;
+                }
+                
             }
         }
 
         .bottom-que {
-            margin-top: 8rem;
+            margin: 6rem 0;
+            padding-bottom: 2rem;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             -webkit-box-align: baseline;
                 -ms-flex-align: baseline;
                     align-items: baseline;
-            padding-bottom: 2rem;
 
             .slide.active {
                 -ms-transform: scale(1.1);

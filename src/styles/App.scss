@@ -27,6 +27,10 @@ section {
   text-align: center;
 }
 
+@media(max-width: 750px) {
+  section { padding: 4rem 1rem;}
+}
+
 .hidden { display: none; }
 
 .opacity-0 { opacity: 0; }

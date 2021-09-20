@@ -68,6 +68,11 @@
                      -o-transition-duration: 1s ease;
                         transition-duration: 1s ease;
             }
+
+            @media (max-width: 750px) {
+                .slide { max-width: 350px;
+                    img { width: 100%; }}
+            }
     
             .slide.active {
                 -o-transition-duration: 1s;
@@ -85,6 +90,18 @@
 
             .left-que { left: -15rem; }
             .right-que { right: -15rem; }
+            @media(max-width: 1000px) {
+                .left-que { left: -6rem; }
+                .right-que { right: -6rem; }
+            }
+            @media (max-width: 750px) {
+                .slide-que { 
+                    max-width: 350px;
+                    img { width: 100%; }
+                }
+                .left-que { left: -2rem; }
+                .right-que { right: -2rem; }
+            }
         }
     }
 }
