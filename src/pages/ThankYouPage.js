@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/ThankYou.scss';
 import { Link } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
 import { Helmet } from 'react-helmet';
@@ -15,8 +16,10 @@ export default function ThankYou() {
             </Helmet>
             <main>
                 <animated.div style={props} id="thankyou">
-                    <h1 className='h1'>Thank you for contacting us. A member of our team will be in touch soon.</h1>
-                    <Link to='/' className='btn'>Return Home</Link>
+                    <h1 className='h1'>Thank you for reaching out. <span>A member of Michelle's team will be in touch soon.</span></h1>
+                    <div className='btn-container'>
+                        <Link to='/' className='btn'>Return Home</Link>
+                    </div>
                 </animated.div>
             </main>
         </>

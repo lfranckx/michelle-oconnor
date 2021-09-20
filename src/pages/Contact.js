@@ -15,7 +15,7 @@ function Contact() {
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('service_lfs5csq', 'template_qhm0n59', e.target, 'user_4ZnH44kohKcJmQhnL2VGX')
+        emailjs.sendForm('service_rrj1goy', 'template_lc3rglk', e.target, 'user_4ZnH44kohKcJmQhnL2VGX')
             .then(res => {
                 history.push('/thankyou');
             })
@@ -32,12 +32,12 @@ function Contact() {
             <main>
                 <section className='wrap' id='contact'>
                     <div className='left-wrap'>
-                        <h1>Get in touch</h1>
                         <div className='img-wrap'>
-                            <img src='/images/michelle.jpeg' alt='michelle' width='500px'/>
+                            <img src='/images/michelle.jpeg' alt='michelle' />
                         </div>
                     </div>
                     <div className='right-wrap'>
+                        <h1>Get in touch</h1>
                         <form onSubmit={sendEmail}>
                             <div className="label">
                                 <label htmlFor="name"></label>

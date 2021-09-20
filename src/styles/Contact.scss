@@ -9,42 +9,58 @@
         -ms-flex-align: center;
             align-items: center;
 
-    @media (max-width: 749px) {
-        #contact { padding: 2rem; }
-    }
-
     .left-wrap {
         margin-right: 4rem;
-        h1 {
-            font-family: "Joules Hand";
-            font-size: 3rem;
-            font-weight: 4;
-        }
     
         .img-wrap {
             margin-top: 2rem;
     
             img {
                 border-radius: 100px;
+                max-width: 500px;
+            }
+
+            @media (max-width: 1000px) {
+                img { max-width: 350px;}
             }
         }
     }
 
+    @media (max-width: 800px) {
+        .left-wrap { display: none; }
+    }
+
     .right-wrap {
-        margin-left: 4rem;
+        h1 {
+            font-family: "Joules Hand";
+            font-size: 3rem;
+            font-weight: 4;
+        }
+
         form {
             input, textarea {
                 padding: 5px 10px;
                 font-size: 1.2rem;
-                width: 300px;
+                width: 400px;
                 margin: 5px;
             }
 
-            @media(min-width: 1400px) {
+            @media(min-width: 1200px) {
                 input, textarea {
                     width: 500px;
                 }
             }
+
+            @media(max-width: 500px) {
+                input, textarea {
+                    width: 280px;
+                    font-size: 1rem;
+                }
+            }
         }
     }
+}
+
+@media (max-width: 750px) {
+    #contact { padding: 2rem 1rem; }
 }
