@@ -15,21 +15,14 @@ const AwardsSlider = ({ slides }) => {
     }
 
     if (!Array.isArray(slides) || slides.length <= 0) {
-        return (
-            <>
-                <div className='awards_slider'>
-                    <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
-                    <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} /> 
-                </div>
-            </>
-        )
+        return <div className='awards_slider'></div>
     }
 
     return (
         <>
             <div className='awards_slider'>
-                <FaArrowAltCircleLeft className='left-arrow arrow' onClick={prevSlide} />
-                <FaArrowAltCircleRight className='right-arrow arrow' onClick={nextSlide} />
+                <FaArrowAltCircleLeft className='left-arrow arrow' onClick={prevSlide} color='white' />
+                <FaArrowAltCircleRight className='right-arrow arrow' onClick={nextSlide} color='white' />
                 {AwardsData.map((img, index) => {
                     if (current === 0) {
                         return (
