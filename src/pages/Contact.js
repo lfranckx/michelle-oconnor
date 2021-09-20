@@ -33,7 +33,7 @@ function Contact() {
                 <section className='wrap' id='contact'>
                     <div className='left-wrap'>
                         <div className='img-wrap'>
-                            <img src='../images/michelle.jpeg' alt='michelle' />
+                            <img src='https://michelleoconnor.s3.us-east-2.amazonaws.com/michelle.jpeg' alt='michelle' />
                         </div>
                     </div>
                     <div className='right-wrap'>
