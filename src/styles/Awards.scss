@@ -30,16 +30,24 @@
                     user-select: none;
             z-index: 4;
             cursor: pointer;
+            color: #fff;
 
             path {
                 color: #fff;
             }
 
-            &:hover path {
+            &:hover {
                 color: #E94B5F;
                 -o-transition: all ease 0.2s;
                 transition: all ease 0.2s;
                 -webkit-transition: all ease 0.2s;
+                
+                path {
+                    color: #E94B5F;
+                    -o-transition: all ease 0.2s;
+                    transition: all ease 0.2s;
+                    -webkit-transition: all ease 0.2s;
+                }
             }
         }
 
