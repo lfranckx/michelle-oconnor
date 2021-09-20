@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/ThankYou.scss';
 import { Link } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
@@ -6,6 +6,10 @@ import { Helmet } from 'react-helmet';
 
 export default function ThankYou() {
     const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } })
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, [])
 
     return (
         <>

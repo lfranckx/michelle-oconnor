@@ -41,7 +41,7 @@
                 -o-transition: all ease 0.2s;
                 transition: all ease 0.2s;
                 -webkit-transition: all ease 0.2s;
-                
+
                 path {
                     color: #E94B5F;
                     -o-transition: all ease 0.2s;
@@ -114,7 +114,7 @@
             }
 
             @media (max-width: 400px) {
-                .slide { max-width: 320px;
+                .slide { max-width: 300px;
                     img { width: 100%; }}
                 .slide-que { display: none; }
             }
