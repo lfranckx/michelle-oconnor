@@ -27,10 +27,6 @@ section {
   text-align: center;
 }
 
-@media(max-width: 750px) {
-  section { padding: 4rem 1rem;}
-}
-
 .hidden { display: none; }
 
 .opacity-0 { opacity: 0; }
@@ -49,6 +45,17 @@ section {
     transition: all ease .15s;
     -webkit-transition: all ease .15s; 
   }
+}
+
+@media(max-width: 750px) {
+  h2 { font-size: 3rem; }
+  section { padding: 4rem 1rem; }
+}
+
+@media(max-width: 500px) {
+  h2 { font-size: 2.4rem; }
+  section { padding: 4rem .2rem; }
+
 }
 
 @font-face {

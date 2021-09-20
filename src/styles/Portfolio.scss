@@ -25,6 +25,10 @@
                 align-items: center;
         min-height: 100vh;
 
+        @media (max-width: 400px) {
+            min-height: 850px;
+        }
+
         .arrow {
             position: absolute;
             top: 50%;
@@ -80,8 +84,11 @@
                 z-index: 2;
 
                 img {
-                    max-height: 550px;
-                    width: 100%;
+                    max-width: 330px;
+                }
+
+                @media (max-width: 400px) {
+                    img { max-width: 280px; }
                 }
                 
             }
@@ -104,6 +111,14 @@
                 -o-transition: all ease 1s;
                 transition: all ease 1s;
                 -webkit-transition: all ease 1s;
+            }
+
+            @media (max-width: 600px) {
+                img { width: 70px; }
+            }
+
+            @media (max-width: 400px) {
+                img { width: 50px; }
             }
         }
 

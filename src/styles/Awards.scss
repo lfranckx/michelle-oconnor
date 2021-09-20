@@ -14,7 +14,7 @@
         display: flex;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
-                justify-content: center;
+            justify-content: center;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -41,8 +41,6 @@
                 transition: all ease 0.2s;
                 -webkit-transition: all ease 0.2s;
             }
-
-            
         }
 
         .left-arrow { left: 3rem; } 
@@ -57,6 +55,10 @@
             .right-arrow { right: .5rem; }
         }
 
+        @media(max-width: 400px) {
+            .arrow { font-size: 2.8rem; }
+        }
+
         .slides-wrap {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -67,11 +69,6 @@
                 -webkit-transition-duration: 1s ease;
                      -o-transition-duration: 1s ease;
                         transition-duration: 1s ease;
-            }
-
-            @media (max-width: 750px) {
-                .slide { max-width: 350px;
-                    img { width: 100%; }}
             }
     
             .slide.active {
@@ -90,11 +87,16 @@
 
             .left-que { left: -15rem; }
             .right-que { right: -15rem; }
+
             @media(max-width: 1000px) {
                 .left-que { left: -6rem; }
                 .right-que { right: -6rem; }
             }
+
             @media (max-width: 750px) {
+                .slide { max-width: 350px;
+                    img { width: 100%; }}
+
                 .slide-que { 
                     max-width: 350px;
                     img { width: 100%; }
@@ -102,6 +104,20 @@
                 .left-que { left: -2rem; }
                 .right-que { right: -2rem; }
             }
+
+            @media (max-width: 400px) {
+                .slide { max-width: 320px;
+                    img { width: 100%; }}
+                .slide-que { display: none; }
+            }
         }
+    }
+}
+
+@media (max-width: 400px) {
+    #awards { 
+        height: 500px; 
+        h2 { margin-bottom: 0;}
+        .awards_slider { min-height: 450px; }
     }
 }

@@ -35,8 +35,30 @@
                     transition: all ease .5s;
                     -webkit-transition: all ease .5s;
                 }
-            }
+
+                @media (max-width: 500px) {
+                    &:nth-child(1) { 
+                        max-width: 150px;
+                    }
+                }
+            }   
             
+            @media (max-width: 500px) {
+                &:nth-child(1) img { 
+                    width: 100px;
+                }
+                &:nth-child(3) img { 
+                    max-width: 90px;
+                }
+
+                &:nth-child(4) img { 
+                    max-width: 200px;
+                }
+
+                &:nth-child(6) img { 
+                    max-width: 120px;
+                }
+            }
         }
     }
 }

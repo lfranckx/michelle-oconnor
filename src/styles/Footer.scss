@@ -8,6 +8,10 @@
         text-align: center;
         padding: 4rem 4rem 2rem;
 
+        @media (max-width: 500px) {
+            padding: 4rem 2rem;
+        }
+
         .wrap {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -34,6 +38,10 @@
                     color: #FBE4D6;
                     font-size: 1rem;
                     &:hover { text-decoration: underline; }
+                }
+
+                @media(max-width: 400px) {
+                    h3 a { font-size: 2rem; }
                 }
             }
 
@@ -79,6 +87,14 @@
                         margin-top: 1rem;
                     }
                 }
+            }
+        }
+
+        @media(max-width: 750px) {
+            .wrap { 
+                flex-direction: column;
+                
+                .right { margin-top: 4rem; }
             }
         }
 
