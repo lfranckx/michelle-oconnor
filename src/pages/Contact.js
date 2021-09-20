@@ -33,7 +33,7 @@ function Contact() {
                 <section className='wrap' id='contact'>
                     <div className='left-wrap'>
                         <div className='img-wrap'>
-                            <img src='/images/michelle.jpeg' alt='michelle' />
+                            <img src='../images/michelle.jpeg' alt='michelle' />
                         </div>
                     </div>
                     <div className='right-wrap'>
