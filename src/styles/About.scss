@@ -72,13 +72,22 @@
             .left-arrow { right: 2rem; } 
             .right-arrow { left: 2rem; }
 
-            #restart { font-size: 2.4rem; left: 1.5rem; left: 2rem; -webkit-transform: scale(1.18); -ms-transform: scale(1.18); transform: scale(1.18);}
+            #restart { 
+                font-size: 2.4rem; 
+                left: 1.5rem; left: 2rem; 
+                -webkit-transform: scale(1.18); 
+                -ms-transform: scale(1.18); 
+                transform: scale(1.18);
+            }
         }
     }
 
     @media (max-width: 750px) {
         .wrap { 
-            flex-direction: column; 
+            -webkit-box-orient: vertical; 
+            -webkit-box-direction: normal; 
+                -ms-flex-direction: column; 
+                    flex-direction: column; 
             
             .img-wrap { 
                 width: 100%; 
@@ -91,7 +100,9 @@
                 width: auto; 
                 .text-wrap { 
                     min-height: 200px; 
-                    align-items: flex-start;
+                    -webkit-box-align: start; 
+                        -ms-flex-align: start; 
+                            align-items: flex-start;
                 }
             }
         }
