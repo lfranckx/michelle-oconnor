@@ -74,13 +74,13 @@
             position: absolute;
 
             .slide {
-                -webkit-transition-duration: 1s ease;
-                     -o-transition-duration: 1s ease;
-                        transition-duration: 1s ease;
+                -webkit-transition: 1s ease all;
+                     -o-transition: 1s ease all;
+                        transition: 1s ease all;
             }
     
             .slide.active {
-                -o-transition-duration: 1s;
+                -o-transition-duration: 1;
                    transition-duration: 1s;
                 -webkit-transition-duration: 1s;
                 -ms-transform: scale(1.08);
