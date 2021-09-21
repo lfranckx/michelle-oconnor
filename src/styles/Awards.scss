@@ -120,7 +120,13 @@
 
             @media (max-width: 400px) {
                 .slide { max-width: 280px;
-                    img { width: 100%; }}
+                    img { width: 100%; }
+                }
+                .slide.active {
+                    -ms-transform: scale(1);
+                        transform: scale(1);
+                    -webkit-transform: scale(1);
+                }
 
                 .slide-que { 
                     max-width: 280px;
