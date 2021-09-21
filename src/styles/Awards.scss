@@ -124,11 +124,11 @@
 
                 .slide-que { 
                     max-width: 280px;
-                    // display: none; 
-                    img { width: 100%; }
+                    display: none; 
+                    img { display: none;  }
                 }
-                .left-que { left: 0rem; }
-                .right-que { right: 0rem; }
+                .left-que { display: none; }
+                .right-que { display: none; }
             }
         }
     }
