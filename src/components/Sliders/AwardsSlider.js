@@ -18,48 +18,43 @@ const AwardsSlider = ({ slides }) => {
         return <div className='awards_slider'></div>
     }
 
-    const screenWidth = window.screen.width;
-    console.log(screenWidth);
-
     return (
         <>
             <div className='awards_slider'>
                 <FaArrowAltCircleLeft className='left-arrow arrow' onClick={prevSlide} color='white' />
                 <FaArrowAltCircleRight className='right-arrow arrow' onClick={nextSlide} color='white' />
                 {AwardsData.map((img, index) => {
-                    if (screenWidth > 500) {
-                        if (current === 0) {
-                            return (
-                                <div className='slides-wrap' key={index} >
-                                    <div className={'slide-que left-que'}>
-                                        { index === length - 1  && (<img src={img.src} alt={img.alt} />)}
-                                    </div>
-                                    <div className={index === current ? 'slide active' : 'slide'}>
-                                        {index === current && (<img src={img.src} alt={img.alt} />)}
-                                    </div>
-                                    <div className={'slide-que right-que'}>
-                                        {index === current + 1  && (<img src={img.src} alt={img.alt} />)}
-                                    </div>
+                    if (current === 0) {
+                        return (
+                            <div className='slides-wrap' key={index} >
+                                <div className={'slide-que left-que'}>
+                                    { index === length - 1  && (<img src={img.src} alt={img.alt} />)}
                                 </div>
-                            )
-                        }
+                                <div className={index === current ? 'slide active' : 'slide'}>
+                                    {index === current && (<img src={img.src} alt={img.alt} />)}
+                                </div>
+                                <div className={'slide-que right-que'}>
+                                    {index === current + 1  && (<img src={img.src} alt={img.alt} />)}
+                                </div>
+                            </div>
+                        )
+                    }
     
-                        if (current === length - 1) {
-                            return ( 
-                                <div className='slides-wrap' key={index} >
-                                    <div className={'slide-que left-que'}>
-                                        { index === current - 1  && (<img src={img.src} alt={img.alt} />)}
-                                    </div>
-                                    <div className={index === current ? 'slide active' : 'slide'}>
-                                        {index === current && (<img src={img.src} alt={img.alt} />)}
-                                    </div>
-                                    <div className={'slide-que right-que'}>
-                                        {index === 0  && (<img src={img.src} alt={img.alt} />)}
-                                    </div>
+                    if (current === length - 1) {
+                        return ( 
+                            <div className='slides-wrap' key={index} >
+                                <div className={'slide-que left-que'}>
+                                    { index === current - 1  && (<img src={img.src} alt={img.alt} />)}
                                 </div>
-                            
-                            );
-                        }
+                                <div className={index === current ? 'slide active' : 'slide'}>
+                                    {index === current && (<img src={img.src} alt={img.alt} />)}
+                                </div>
+                                <div className={'slide-que right-que'}>
+                                    {index === 0  && (<img src={img.src} alt={img.alt} />)}
+                                </div>
+                            </div>
+                        
+                        );
                     }
 
                     return ( 
