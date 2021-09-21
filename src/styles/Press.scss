@@ -38,7 +38,7 @@
 
                 @media (max-width: 500px) {
                     &:nth-child(1) { 
-                        max-width: 150px;
+                        max-width: 180px;
                     }
                 }
             }   
@@ -47,6 +47,11 @@
                 &:nth-child(1) img { 
                     width: 100px;
                 }
+
+                &:nth-child(2) img { 
+                    max-width: 150px;
+                }
+
                 &:nth-child(3) img { 
                     max-width: 90px;
                 }
@@ -55,8 +60,12 @@
                     max-width: 200px;
                 }
 
+                &:nth-child(5) img { 
+                    max-width: 130px;
+                }
+
                 &:nth-child(6) img { 
-                    max-width: 120px;
+                    max-width: 110px;
                 }
             }
         }
