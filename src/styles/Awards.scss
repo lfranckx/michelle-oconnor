@@ -119,9 +119,11 @@
 
                 .slide-que { 
                     max-width: 300px;
-                    display: none; 
+                    // display: none; 
                     img { width: 100%; }
                 }
+                .left-que { left: 0rem; }
+                .right-que { right: 0rem; }
             }
         }
     }
