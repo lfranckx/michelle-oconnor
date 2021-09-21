@@ -53,7 +53,6 @@ const AwardsSlider = ({ slides }) => {
                                     {index === 0  && (<img src={img.src} alt={img.alt} />)}
                                 </div>
                             </div>
-                        
                         );
                     }
 
