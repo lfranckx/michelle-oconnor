@@ -14,7 +14,7 @@ const ComingSoon = () => {
         <>
             <Helmet >
                 <title>Coming Soon</title>
-                <meta name='description' content='Coming Soon'/>
+                <meta name='description' content='This page is coming soon'/>
                 <meta name='keywords' content='Curly Hair, Coily Hair, Black Hair, Brown Hair, Red Hair, Blonde Hair, Wavy Hair, Straight Hair, Smooth Hair, Ethnic Hair, Multicultural Hair, Crown Act, Curls, Hairstylist, Hairdresser, Stylist, Editorial stylist, Award Winner, NAHA, Mentor' />
             </Helmet>
             
