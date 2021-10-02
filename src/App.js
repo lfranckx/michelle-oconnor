@@ -11,6 +11,11 @@ import ComingSoon from './pages/ComingSoon';
 function App() {
   return (
     <>
+      <Helmet >
+          <title>Michelle O'Connor</title>
+          <meta name='description' content="Michelle O'Connor is a five-time NAHA-winning hairstylist, trailblazer, influencer, educator, Matrix global artistic director, and an emerging voice on diversity and inclusion within the beauty industry."/>
+          <meta name='keywords' content='Curly Hair, Coily Hair, Black Hair, Brown Hair, Red Hair, Blonde Hair, Wavy Hair, Straight Hair, Smooth Hair, Ethnic Hair, Multicultural Hair, Crown Act, Curls, Hairstylist, Hairdresser, Stylist, Editorial stylist, Award Winner, NAHA, Mentor' />
+      </Helmet>
       <Switch >
         <Route exact path="/" component={Home} />
         <Route exact path='/contact' component={Contact} />
