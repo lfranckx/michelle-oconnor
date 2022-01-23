@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import ThankYou from './pages/ThankYouPage';
 import NotFoundPage from './pages/NotFoundPage';
 import ComingSoon from './pages/ComingSoon';
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
