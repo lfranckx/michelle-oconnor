@@ -45,6 +45,14 @@
                 margin: 5px;
             }
 
+            .error {
+                font-size: 12px;
+                text-align: left;
+                padding-left: 15px;
+                padding-bottom: 5px;
+                color: #E94B5F;
+            }
+
             @media(min-width: 1200px) {
                 input, textarea {
                     width: 500px;
