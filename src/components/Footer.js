@@ -28,7 +28,8 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className='copyright_content'>
-                    <h4>Managed by <span><a href='https://www.socialarthouse.com/' target='_blank' rel='noreferrer'>Social Art House</a></span> | <span><a href='/#'>info@socialarthouse.com</a></span></h4>
+                    <h4>Managed by <span><a href='https://www.socialarthouse.com' target='_blank' rel='noreferrer'>Social Art House</a></span> | <span><a href='mailto:info@socialarthouse.com'>info@socialarthouse.com</a></span></h4>
+                    <h4>Website designed and developed by <span><a href='https://www.lfxmedia.io' target='_blank' rel='noreferrer'>LFX Media</a></span></h4>
                     <small id='copyright'>Copyright © 2021. All rights reserved.</small>
                 </div>
             </footer>
