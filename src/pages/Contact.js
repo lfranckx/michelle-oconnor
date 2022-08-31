@@ -47,7 +47,7 @@ function Contact() {
         name: Yup.string().min(2, '* Name is too short').max(20, "* 20 maximum characters").required('* Required'),
         email: Yup.string().email("* This is not an email").required("* Required"),
         phone: Yup.string().matches(phoneRegExp, `* This doesn't look like a phone number`).max(10, '* Phone number is too long').required("* Required"),
-        message: Yup.string().min(2, "* Message is too short").max(120, "* 120 maximum characters").required("* Required"),
+        message: Yup.string().min(2, "* Message is too short").max(1000, "* 1000 maximum characters").required("* Required"),
         website: Yup.string().min(2, "* Sorry, this is too short").max(50, "* 50 maximum characters")
     })
 
